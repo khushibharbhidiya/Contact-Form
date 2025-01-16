@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to right, #ff105f, #ffad06);
+
+}
+
+/* Radio buttons style start */
+
+.wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.wrapper .heading {
+    margin-top: 40px;
+    color: #f9f6f6;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.radio-buttons {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.radio-btn {
+    position: relative;
+    width: 234px;
+    height: 260px;
+    margin: 10px;
+    background-color: #222533;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+.radio-btn .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-btn .profile-img {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.radio-btn h2 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.radio-btn .skill {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #c3c2c7;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.radio-btn .check-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #1b1d28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.radio-btn .check-icon .icon {
+    display: flex;
+    position: relative;
+    width: 18px;
+    height: 8px;
+    margin-top: -2px;
+    transform: rotate(-40deg);
+}
+
+.radio-btn .check-icon .icon::before {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.231);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.1s;
+
+}
+
+.radio-btn .check-icon .icon::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.231);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.custom-radio input:checked+.radio-btn {
+    border: 4px solid #7434c3;
+}
+
+.custom-radio input:checked+.radio-btn .check-icon {
+    background-color: #7434c3;
+
+}
+
+.custom-radio input:checked+.radio-btn .check-icon .icon::before,
+.custom-radio input:checked+.radio-btn .check-icon .icon::after {
+    transform: scale(1);
+}
+
+.radio-btn .add-profile {
+    width: 234px;
+    height: 260px;
+    margin: 10px;
+    background-color: #222533;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.radio-btn .add-profile img {
+    width: 80px;
+    user-select: none;
+}
+
+a {
+    display: block;
+    float: inline-end;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #843bda;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: rgb(243, 243, 252);
+    background-color: #9456db;
+}
+
+i {
+    margin-left: 10px;
+}
+
+
+/* // Radio buttons style end */
+
+
+/* checkbox style start */
+
+.wrapper0 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.wrapper0 .title {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+
+.wrapper2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+.wrapper2 .option_item {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 175px;
+    margin: 10px;
+}
+
+.option_item .Checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.option_item .option_inner .icon1 {
+    margin-bottom: 10px;
+    margin-left: -9px;
+}
+
+.option_item .option_inner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 58px 40px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+}
+
+.option_item .option_inner .fa {
+    font-size: 32px;
+}
+
+.option_item .option_inner .name {
+    user-select: none;
+    font-size: 14px;
+}
+
+
+
+.option_item .Checkbox:checked~.option_inner.facebook {
+    border-color: #3b5999;
+    color: #3b5999;
+}
+
+.option_item .Checkbox:checked~.option_inner.instagram {
+    border-color: #e4405f;
+    color: #e4405f;
+}
+
+.option_item .Checkbox:checked~.option_inner.twitter {
+    border-color: #55acee;
+    color: #55acee;
+}
+
+.option_item .Checkbox:checked~.option_inner.linkedin {
+    border-color: #0077b5;
+    color: #0077b5;
+}
+
+.option_item .Checkbox:checked~.option_inner.whatsapp {
+    border-color: #c9ec19;
+    color: #c9ec19;
+}
+
+.option_item .Checkbox:checked~.option_inner.google {
+    border-color: #00b558;
+    color: #00b558;
+}
+
+.option_item .Checkbox:checked~.option_inner.reddit {
+    border-color: #fc6507;
+    color: #fc6507;
+}
+
+.option_item .Checkbox:checked~.option_inner.quora {
+    border-color: #dd15b2;
+    color: #dd15b2;
+}
+
+.option_item .option_inner .tickmark {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border: 20px solid;
+    border-color: #000 transparent transparent #000;
+    display: none;
+}
+
+.option_item .Checkbox:checked~.option_inner .tickmark {
+    display: block;
+
+}
+
+
+.option_item .option_inner .tickmark::before {
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: -16px;
+    width: 15px;
+    height: 5px;
+    border: 3px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+}
+
+
+.option_item .option_inner .facebook .tickmark {
+    border-color: #3b5999 transparent transparent #3b5999;
+
+}
+
+.option_item .option_inner .instagram .tickmark {
+    border-color: #55acee transparent transparent #55acee;
+
+}
+
+.option_item .option_inner .twitter .tickmark {
+    border-color: #e4405f transparent transparent #e4405f;
+
+}
+
+.option_item .option_inner .linkedin .tickmark {
+    border-color: #00a9b5 transparent transparent #00a9b5;
+
+}
+
+.option_item .option_inner .whatsapp .tickmark {
+    border-color: #c9ec19 transparent transparent #c9ec19;
+
+}
+
+.option_item .option_inner .google .tickmark {
+    border-color: #00b558 transparent transparent #00b558;
+
+}
+
+.option_item .option_inner .reddit .tickmark {
+    border-color: #fc6507 transparent transparent #fc6507;
+
+}
+
+.option_item .option_inner .quora .tickmark {
+    border-color: #dd15b2 transparent transparent #dd15b2;
+
+}
+
+/* //checkbox style end  */
+
+
+/* media Query  */
+
+
+@media screen and (max-width:500px) {
+
+    .radio-buttons {
+
+        margin: 10px;
+
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .radio-buttons {
+        width: 50% !important;
+
+
+    }
+
+    .radio-btn {
+
+        width: 200px !important;
+
+    }
+
+}
+
+/* //Media Query */
